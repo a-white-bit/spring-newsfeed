@@ -84,7 +84,7 @@ class SpringNewsfeedApplicationTests {
 
         // 댓글 좋아요 db 등록
         CommentLike commentLike = new CommentLike(
-                new CommentLikeId(user3.getId(), comment.getId()),
+                new CommentLikeId(user3.getId(), comment.getCommentId()),
                 user3, comment);
         commentLikeRepository.save(commentLike);
 

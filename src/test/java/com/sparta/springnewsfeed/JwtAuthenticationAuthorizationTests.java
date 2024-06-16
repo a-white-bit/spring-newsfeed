@@ -1,4 +1,4 @@
-package com.sparta.springnewsfeed.auth;
+package com.sparta.springnewsfeed;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -6,6 +6,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sparta.springnewsfeed.auth.JwtUtil;
+import com.sparta.springnewsfeed.auth.LoginRequestDto;
 import com.sparta.springnewsfeed.user.User;
 import com.sparta.springnewsfeed.user.UserRepository;
 import com.sparta.springnewsfeed.user.UserStatusEnum;
