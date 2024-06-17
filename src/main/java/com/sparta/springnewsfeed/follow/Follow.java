@@ -14,7 +14,6 @@ import lombok.Setter;
 @IdClass(FollowId.class)
 @Table(name = "follow")
 public class Follow extends Timestamped {
-
     @Id
     @Column(name = "follower_id")
     private Long followerId;
